@@ -1,0 +1,12 @@
+# Bir sözlük oluşturma
+ogrenci = {
+    "isim": "Ahmet",
+    "yas": 20,
+    "bolum": "Bilgisayar Mühendisliği"
+}
+
+# Sözlükten verilere erişim
+print("İsim:", ogrenci["isim"])
+print("Yaş:", ogrenci["yas"])
+print("Bölüm:", ogrenci["bolum"])
+print(type(ogrenci))
