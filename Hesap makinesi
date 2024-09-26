@@ -1,0 +1,14 @@
+a=int(input("bir sayi giriniz"))
+b=int(input("ikinci sayi giriniz"))
+işlem=input("islemi giriniz")
+if (işlem=="1"):
+	print( "{} ve {} toplami {}dir".format (a,b,a+b))
+elif (işlem=="2"):
+	print( "{} ve {} farki {}dir".format (a,b,a-b))
+elif (işlem=="3"):
+	print( "{} ve {}  carpimi{}dir".format (a,b,a*b))	
+elif (işlem=="4"):
+	print( "{} ve {} bolumu {}dir".format (a,b,a/b))	
+else:
+    
+    print( "gecerli degil")
