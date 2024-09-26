@@ -1,0 +1,12 @@
+#sys_kullanici_adi="ali"
+sys_parola="12345"
+kullanici_adi=(input("kullanici adi gir"))
+parola=(input("parola gir"))
+if (sys_kullanici_adi==kullanici_adi and sys_parola== parola):
+	print("hg")
+elif (sys_kullanici_adi!=kullanici_adi and sys_parola== parola):
+	print("k yalns")
+elif (sys_kullanici_adi==kullanici_adi and sys_parola!= parola):
+	print("p yalniş")
+else :
+	print("ikiside yalniş")
