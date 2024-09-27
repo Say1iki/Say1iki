@@ -1,0 +1,25 @@
+sys_kullanici_adi = "murat"
+sys_parola = "1234"
+giris_hakki = 3
+
+while True:
+    kullanici_adi = input("Kullanıcı adı: ")
+    parola = input("Parola: ")
+    
+    if (kullanici_adi == sys_kullanici_adi and parola == sys_parola):
+        print("Hoş geldiniz!")
+        break  # Giriş başarılı olduğunda döngüden çık
+    elif (kullanici_adi != sys_kullanici_adi and parola == sys_parola):
+        print("Kullanıcı adı yanlış.")
+        giris_hakki -= 1
+    elif (kullanici_adi == sys_kullanici_adi and parola != sys_parola):
+        print("Parola yanlış.")
+        giris_hakki -= 1
+    else:
+        print("Kullanıcı adı ve parola yanlış.")
+        giris_hakki -= 1
+    
+    # Giriş hakkı kalmazsa programı sonlandır
+    if giris_hakki == 0:
+        print("Giriş hakkınız bitti.")
+        break
