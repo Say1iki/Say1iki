@@ -1,0 +1,4 @@
+liste=range(20)
+for eleman in liste:
+	if eleman%2==0:
+		print(eleman)
