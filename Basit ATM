@@ -1,0 +1,32 @@
+print("İşlem seçiniz:")
+print("1 - Bakiye Sorgulama")
+print("2 - Para Yatırma")
+print("3 - Para Çekme")
+print("4 - İşlemi Sonlandırma")
+bakiye = 1000
+
+while True:
+    islem = input("İşlem giriniz: ")  
+    
+    if islem == "1":
+        print("Bakiyeniz:", bakiye)    
+
+    elif islem == "2":
+        yatirilan_para = int(input("Yatıracağınız para miktarını giriniz: "))  
+        bakiye = bakiye + yatirilan_para
+        print("Bakiyeniz güncellendi:", bakiye)
+    
+    elif islem == "3":
+        cekilecek_para = int(input("Çekeceğiniz para miktarını giriniz: "))
+        if cekilecek_para <= bakiye:
+            bakiye = bakiye - cekilecek_para
+            print("Para çekme işlemi başarılı. Güncel bakiyeniz:", bakiye)
+        else:
+            print("Yetersiz bakiye. Güncel bakiyeniz:", bakiye)
+            
+    elif islem == "4":
+        print("Bizi kullandığınız için teşekkür ederiz.\n İşlem sonlandırılıyor...")
+        break  # Sonsuz döngüyü sonlandırmak için break ifadesi kullanıldım
+               
+    else:
+        print("Geçersiz işlem. Lütfen tekrar deneyiniz.")
