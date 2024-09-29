@@ -1,0 +1,8 @@
+def toplama(a, b, c):
+    return a + b + c
+
+def ikicarp(a):
+    return a * 2
+
+toplam = toplama(3, 4, 5)
+print(ikicarp(toplam))
