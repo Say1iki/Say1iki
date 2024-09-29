@@ -1,0 +1,10 @@
+def uclecarp(a):
+	print("birinci fonksiyon calişti")
+	return a*3
+def ikitopla(a):
+	print("2. fonksiyon calisti")
+	return a+2
+def dortbol(a):
+	print("3. fonksiyon calisti.")
+	return a/4
+print(uclecarp(ikitopla
