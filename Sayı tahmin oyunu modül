@@ -1,0 +1,29 @@
+import random  # random modülünü import ettik import modulu ekller. 
+import time    # time modülünü import ettik
+
+rastgele_sayı = random.randint(1, 100) # birle 40 arasi rastgele sayilar
+tahmin_hakki = 7
+print("1 ile 100 arasındaki sayilari tahmin et")
+
+while True:
+    tahmin = int(input("Tahmininizi giriniz: "))
+    
+    if tahmin < rastgele_sayı:
+        print("Sorgulanıyor...")
+        time.sleep(1)# 1 sayniye oyunu bekletor.
+        print("Tahmininizi artırın.")
+    elif tahmin > rastgele_sayı:
+        print("Sorgulanıyor...")
+        time.sleep(1)
+        print("Tahmininizi azaltın.")
+    else:
+        print("Sorgulanıyor...")
+        time.sleep(1)
+        print(f"Tebrikler! Sayı: {rastgele_sayı}")
+        break
+    
+    tahmin_hakki -= 1  # Tahmin hakkını azaltıyoruz.
+    
+    if tahmin_hakki == 0:
+        print("Deneme hakkınız bitti. Sayı:", rastgele_sayı)
+        break
