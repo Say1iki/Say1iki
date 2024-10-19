@@ -1,0 +1,18 @@
+class Araba:
+    def __init__(self, model, renk, benzin_gucu, silindir):
+        print("Init fonksiyonu çalıştı.")
+        self.model = model
+        self.renk = renk
+        self.benzin_gucu = benzin_gucu
+        self.silindir = silindir
+
+    def bilgileri_goster(self):
+        print(f"Model: {self.model}, Renk: {self.renk}, Benzin Gücü: {self.benzin_gucu}, Silindir: {self.silindir}")
+
+araba1 = Araba("Renault Megane", "Gümüş", 110, 4)
+araba2 = Araba("Peugeot", "Beyaz", 90, 6)
+araba3 = Araba("Ford", "Kırmızı", 140, 8)
+
+araba1.bilgileri_goster()
+araba2.bilgileri_goster()
+araba3.bilgileri_goster()
