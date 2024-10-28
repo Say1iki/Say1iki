@@ -1,0 +1,18 @@
+class Yazilimci:
+    def __init__(self, isim, soyisim, numara, maas, diller):
+        self.isim = isim
+        self.soyisim = soyisim
+        self.numara = numara
+        self.maas = maas
+        self.diller = diller
+
+    def bilgileri_goster(self):
+        print("Yazilimci obje ozellikleri")
+        print(f"Isim: {self.isim}")
+        print(f"Soyisim: {self.soyisim}")
+        print(f"Numara: {self.numara}")
+        print(f"Maaş: {self.maas}")
+        print(f"Diller: {self.diller}")
+
+yazilimci = Yazilimci("Mustafa Murat", "Coşkun", 1224, 300, ["C", "Python"])
+yazilimci.bilgileri_goster()
